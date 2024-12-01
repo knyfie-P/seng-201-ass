@@ -1,19 +1,23 @@
-@media (max-width: 1159px){
+/* Media query for screen width less than 1159px */
+@media (max-width: 1159px) {
     h1 {
         font-size: 2.2em;
     }
-    
+
     h3 {
         font-size: 1.2em;
     }
-    .rectangle .fa-solid{
+
+    /* Adjust font size for icons and text inside rectangles */
+    .rectangle .fa-solid {
         font-size: 5em;
     }
-    
-    .rectangle p{
+
+    .rectangle p {
         font-size: 1.2em;
     }
 
+    /* Adjust layout for features section */
     .features-left, .feature-right {
         width: 45%;
     }
@@ -28,11 +32,15 @@
         margin-left: 0;
     }
 }
+
+/* Media query for screen width less than 768px */
 @media (max-width: 768px) {
+    /* Adjust logo size for smaller screens */
     .logoenclosure img {
         width: 150px;
     }
 
+    /* Adjust font sizes for headings */
     h1 {
         font-size: 2em;
     }
@@ -41,49 +49,48 @@
         font-size: 1.2em;
     }
 
+    /* Adjust button size and padding */
     button {
         font-size: 1.5em;
         padding: 0.4em 0.8em;
     }
 
+    /* Adjust layout for the About section */
     .about p {
         width: 90%;
         font-size: 1.2em;
     }
 
+    /* Adjust layout for rectangle container and items */
     .rectangle-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 0.5em; /* Reduced gap between items */
+        gap: 0.5em;
         justify-items: center;
-        margin: 0; /* Remove unnecessary margin */
+        margin: 0;
         padding: 0.5em;
-        height: 250px;
+        height: 280px;
     }
 
     .rectangle {
-        width: auto; /* Reduced width for smaller size */
+        width: auto;
         height: fit-content;
         text-align: center;
-        padding: 0.5em; /* Reduced padding */
-        font-size: 0.9rem; /* Smaller text size */
+        padding: 0.5em;
+        font-size: 0.9rem;
         border-radius: 15px;
     }
 
     .rectangle i {
-        font-size: 1.5rem; /* Smaller icon size */
+        font-size: 1.5rem;
         margin-bottom: 0.5em;
     }
 
     .rectangle p {
-        font-size: 0.8rem; /* Adjusted text size */
+        font-size: 0.8rem;
     }
 
-    .rectangle .fa-solid{
-        font-size: 3em;
-        margin-bottom: 0.2em;
-    }
-
+    /* Adjust layout for the features section */
     .features {
         height: 30em;
         flex-direction: column;
@@ -103,59 +110,72 @@
         list-style: none;
     }
 
-    
+    /* Adjust review container for small screens */
+    .review-container {
+        display: flex;
+        gap: 2em;
+        animation: none;
+        margin: 2em;
+        scroll-behavior: smooth;
+        overflow-x: auto;
+    }
+
+    /* Hide scrollbar in browsers that support it */
+    .review-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .review-container {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    /* Adjust review styles */
     .review {
         width: 400px;
         height: auto;
         flex: 0 0 auto;
-        border: 1px solid #ddd;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: none;
         border-radius: 25px;
         font-size: 1em;
         padding: 2em 3em;
         text-align: center;
-        background-color: #BDFFCC;
-        
     }
-    
+
+    /* FAQ section adjustments */
     .faq {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
         padding: 1em;
-        background-color: #BDFFCC;
         font-family: Arial, sans-serif;
     }
-    
+
     .faq h1 {
         text-align: center;
         margin-bottom: 0.7em;
-        color: #333;
     }
-    
+
     .question {
         width: 95%;
         margin-bottom: 1.5em;
         padding: 1em;
-        border-bottom: 1px solid #000;
         text-align: left;
         font-size: 0.7em;
     }
-    
-    
+
     .question p:first-child {
         font-weight: bold;
         margin-bottom: 0.5em;
-        color: #444;
     }
-    
+
     .question p:last-child {
         margin-top: 0;
         line-height: 1.6;
-        color: #555;
     }
 
+    /* Adjust trusted image list layout */
     .trusted-imglist {
         gap: 2em;
     }
@@ -168,13 +188,27 @@
         width: 90%;
     }
 
-    .logo{
+    /* Adjust layout for outro text */
+    .outrotxt {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .outrotxt h1 {
+        font-size: 1.7em;
+    }
+
+    /* Hide logo and adjust footer */
+    .logo {
         display: none;
     }
-    .footer-content{
-    justify-content: center;
-    align-items: center;
+
+    .footer-content {
+        justify-content: center;
+        align-items: center;
     }
+
+    /* Adjust footer links for small screens */
     .footer-links {
         gap: 3em;
     }
