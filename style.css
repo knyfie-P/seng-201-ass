@@ -7,6 +7,7 @@
 
 /* Set base styling for the HTML and body */
 html, body {
+    font-family: 'Roboto', sans-serif;
     height: 100%;
     background-color: #DCFFE4; /* Soft background color */
 }

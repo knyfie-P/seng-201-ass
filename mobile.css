@@ -60,7 +60,9 @@
         width: 90%;
         font-size: 1.2em;
     }
-
+    .benefits{
+        height: 400px;
+    }
     /* Adjust layout for rectangle container and items */
     .rectangle-container {
         display: grid;
